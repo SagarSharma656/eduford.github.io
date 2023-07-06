@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford|Blog</title>
+
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="smallScreen.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header class="blog-header">
+        <nav>
+            <a href=""><img src="images/logo.png" alt="LOGO"></a>
+            <div class="nav_link" id="navLink">
+                <i class="bi bi-x" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showmenu()"></i>
+        </nav>
+
+        <h1 class="bolg-tittle">Our Certificate & Online Program For 2023</h1>
+    </header>
+
+
+    <section class="blog-container">
+        <div class="blog">
+            <div class="blog-box1">
+                <img src="images/certificate.jpg" alt="">
+                <h2>Our Certificate & Online Program For 2023</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur asperiores suscipit maxime nesciunt vel hic, sequi fugiat harum aliquam est qui cum, aspernatur libero inventore consectetur, incidunt unde! Quod id facere similique, tenetur voluptas dignissimos! Ipsam quisquam incidunt officiis id modi numquam, asperiores ipsa sequi doloremque beatae illum esse ullam!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur earum, voluptatibus ducimus quas suscipit fuga eius recusandae aliquam perspiciatis. Officiis aliquam minima voluptatibus perferendis ut reprehenderit possimus qui ducimus, pariatur voluptatem velit aperiam ea, voluptates molestias minus ullam facere mollitia vel voluptas dolore cum harum alias. Alias unde, suscipit commodi quidem sunt nisi distinctio eligendi omnis aliquid numquam blanditiis culpa atque laboriosam officiis, porro possimus aut. Accusamus quidem debitis corrupti aliquam iusto sint, nobis sapiente cum fugit tempore voluptate delectus dignissimos ea amet id cupiditate sed nulla distinctio, quam at beatae deserunt? Iste, accusamus! Voluptatibus hic nihil eaque sint veniam!</p>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos eligendi animi deleniti totam praesentium. Autem quam, consectetur ratione sit error aut eligendi veritatis rerum dicta ducimus maxime impedit commodi totam beatae suscipit nemo debitis deleniti.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nulla perferendis? Ipsam iure quas quae architecto ullam maxime vitae assumenda temporibus quos unde quam officiis optio, aliquam, incidunt possimus, eum voluptatum quo atque perferendis fugit inventore hic! Non dolor quos blanditiis reiciendis eligendi, odio totam consectetur laboriosam quia amet perferendis eos voluptates repellat nihil ullam dicta illum veritatis labore debitis! Ipsa velit est nulla blanditiis quasi dicta porro saepe, sint ratione neque ipsum vero minima veritatis sapiente quis? Alias, laudantium?</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quis ab nemo, ducimus accusamus est provident amet deleniti voluptate numquam nostrum vero totam ratione maxime aspernatur doloremque molestiae ipsam laboriosam quos. Ipsa nobis a optio dolores natus, facilis placeat aspernatur.</p>
+            
+                <div class="comment">
+                    <h3>Leave a Comment</h3>
+                    <form >
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <input type="number" placeholder="Enter Phone">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button class="hero-btn" type="submit">POST COMMENT</button>
+                    </form>
+                </div>
+            
+            </div>
+            <div class="blog-box2">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>48</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+   
+    
+
+    <footer>
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic itaque illum atque magnam <br>sapiente enim? Lorem ipsum dolor sit amet.</p>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+        <p>Made with <i class="bi bi-heart-fill"></i> by Sagar Sharma</p>
+    </footer>
+
+
+
+</body>
+<script>
+    var navLink = document.getElementById("navLink");
+
+    function showmenu() {
+        navLink.style.right = "0px"
+    }
+    function hidemenu() {
+        navLink.style.right = "-200px"
+    }
+</script>
+
+</html>

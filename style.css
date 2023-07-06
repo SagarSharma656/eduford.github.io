@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;    
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header nav{
+    display: flex;
+    padding: 1% 6% 2% 4%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav img{
+    width: 100px;
+    padding: 8px;
+}
+header nav .nav_link{
+    flex: 1;
+    text-align: right;
+}
+header nav .nav_link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+header nav .nav_link ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+header nav .nav_link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    background-color: #f44336;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+header nav .nav_link ul li:hover::after{
+    width: 100%;
+}
+header .text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+header .text-box h1{
+    font-size: 50px;
+}
+header .text-box p{
+    font-size:  13px;
+    margin: 15px 0 40px;
+}
+
+.course-container{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.course-container h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.course-container p{
+    font-size: 14px;
+    color: #777;
+    line-height: 22px;
+    font-weight: 300;
+    padding: 10px;
+}
+.course-container .courses{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.course-box{
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+}
+
+.course-box h3{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.course-box:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.campus-container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-container h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.campus-container p{
+    font-size: 14px;
+    color: #777;
+    line-height: 22px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.campus{
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.campus-box{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-box img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background-color: rgba(226, 0, 0, 0.7);
+}
+
+.layer h3{
+    width: 100%;
+    color: white;
+    font-size: 26px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+
+
+.facility-container{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.facility-container h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.facility-container p{
+    font-size: 14px;
+    color: #777;
+    line-height: 22px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.facility{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.facility-box{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facility-box img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facility-box h3{
+    margin: 15px 0;
+}
+.facility-box p{
+    padding: 0;
+}
+
+.testimonial-container{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-container h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.testimonial-container p{
+    font-size: 14px;
+    color: #777;
+    line-height: 22px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.testimonial{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.testimonial-box{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    background-color: #fff3f3;
+    text-align: left;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-box img{
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 30px 0 5px;
+
+}
+.testimonial-box p{
+    padding: 0;
+}
+.testimonial-box h3{
+    margin-top: 15px;
+}
+.testimonial-box .bi{
+    color: #f44336;
+}
+
+
+.cta{
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+}
+footer h4{
+    margin: 20px 0 25px 0;
+    font-weight: 600;
+}
+footer p{
+    font-size: 14px;
+    color: #777;
+    line-height: 22px;
+    font-weight: 300;
+    padding: 10px;
+}
+footer p .bi{
+    color: red;
+}
+
+
+
+
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    font-size: 13px;
+    padding: 12px 34px;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+}
+.hero-btn:hover{
+    background-color: #f44336;
+    border: 2px solid #f44336;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+
+
+
+
+
+nav .bi{
+    display: none;
+}

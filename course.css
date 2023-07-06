@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;    
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header nav{
+    display: flex;
+    padding: 1% 6% 2% 4%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav img{
+    width: 100px;
+    padding: 8px;
+}
+header nav .nav_link{
+    flex: 1;
+    text-align: right;
+}
+header nav .nav_link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+header nav .nav_link ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+header nav .nav_link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    background-color: #f44336;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+header nav .nav_link ul li:hover::after{
+    width: 100%;
+}
+
+
+header>h1{
+    text-align: center;
+    color: white;
+    font-size: 62px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+
+
+
+
+
+.course-container{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.course-container h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.course-container p{
+    font-size: 14px;
+    color: #777;
+    line-height: 22px;
+    font-weight: 300;
+    padding: 10px;
+}
+.course-container .courses{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.course-box{
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+}
+
+.course-box h3{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.course-box:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.facility-container{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.facility-container h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.facility-container p{
+    font-size: 14px;
+    color: #777;
+    line-height: 22px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.facility{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.facility-box{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facility-box img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facility-box h3{
+    margin: 15px 0;
+}
+.facility-box p{
+    padding: 0;
+}
+
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+}
+footer h4{
+    margin: 20px 0 25px 0;
+    font-weight: 600;
+}
+footer p{
+    font-size: 14px;
+    color: #777;
+    line-height: 22px;
+    font-weight: 300;
+    padding: 10px;
+}
+footer p .bi{
+    color: red;
+}
+
+
+
+
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #f44336;
+    border: 1px solid #f44336;
+    font-size: 13px;
+    padding: 12px 34px;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+}
+.hero-btn:hover{
+    background-color: #f44336;
+    color: white;
+    border: 2px solid #f44336;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+
+
+
+
+
+nav .bi{
+    display: none;
+}
